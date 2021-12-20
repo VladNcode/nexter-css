@@ -2,6 +2,8 @@
   background-color: $color-secondary
   grid-column: full-start / full-end
   padding: 8rem
+  @media only screen and (max-width: $bp-small)
+    padding: 4rem
 
 .nav
   list-style: none
@@ -21,6 +23,7 @@
     padding: 1.5rem
     display: block
     transition: all .3s
+    // @media only screen and (max-width: $bp-small)
 
   &__link:hover,
   &__link:active
@@ -33,3 +36,5 @@
   color: $color-grey-light-2
   text-align: left
   max-width: 55vw
+  @media only screen and (max-width: $bp-small)
+    max-width: 90vw
